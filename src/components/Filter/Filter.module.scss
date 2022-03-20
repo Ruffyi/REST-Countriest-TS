@@ -1,3 +1,6 @@
+@import './../../styles/abstracts/variables';
+@import './../../styles/abstracts/mixins';
+
 .filter {
 	@include flex-mother(row, center, space-between);
 	height: 10rem;
@@ -6,7 +9,7 @@
 		align-items: flex-start;
 		height: auto;
 	}
-	&__input {
+	&__container {
 		@include flex-mother();
 		width: 40%;
 		min-width: 25rem;
@@ -18,13 +21,13 @@
 			width: 80%;
 			margin: 4rem 0;
 		}
-		.input {
-			height: 100%;
-			padding-left: 1rem;
-			flex-grow: 1;
-			border: none;
-			font-size: 1.5rem;
-		}
+	}
+	&__input {
+		height: 100%;
+		padding-left: 1rem;
+		flex-grow: 1;
+		border: none;
+		font-size: 1.5rem;
 	}
 	&__icon {
 		@include flex-mother();

@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router';
-import Countries from './Countries';
+import Countries from './CountriesApp';
 
 const Routing = () => {
 	return (
