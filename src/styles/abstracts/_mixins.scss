@@ -1,0 +1,24 @@
+@mixin flex-mother($direction: row, $align: center, $justify: center) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+@mixin keyframes($name) {
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@mixin positioning($pos: absolute, $top: 0, $left: 0) {
+	position: $pos;
+	top: $top;
+	left: $left;
+}
+
+@mixin mq($media) {
+	@media (max-width: $media) {
+		@content;
+	}
+}

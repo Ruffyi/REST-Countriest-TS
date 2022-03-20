@@ -1,0 +1,5 @@
+.main {
+	min-height: 100vh;
+	background-color: map-get($colors, 'clr--very-light-gray');
+	color: map-get($colors, 'clr--very-dark-blue-text');
+}

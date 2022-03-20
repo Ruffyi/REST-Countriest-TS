@@ -1,0 +1,30 @@
+body[data-theme='dark'] {
+	.main {
+		background-color: map-get($colors, 'clr--very-dark-blue');
+		color: map-get($colors, 'clr--white');
+	}
+	.header {
+		background-color: map-get($colors, 'clr--dark-blue');
+	}
+	.btn {
+		color: map-get($colors, 'clr--white');
+	}
+	.filter {
+		&__input {
+			background-color: map-get($colors, 'clr--dark-blue');
+			.input {
+				background-color: transparent;
+				color: map-get($colors, 'clr--white');
+			}
+		}
+	}
+	.region {
+		background-color: map-get($colors, 'clr--dark-blue');
+		&__options {
+			background-color: map-get($colors, 'clr--dark-blue');
+		}
+	}
+	.country {
+		background-color: map-get($colors, 'clr--dark-blue');
+	}
+}

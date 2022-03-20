@@ -1,0 +1,10 @@
+.countries {
+	padding: 0 8rem;
+	@include mq(map-get($mq-breakpoints, 'mobile')) {
+		padding: 0 2rem;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	}
+}

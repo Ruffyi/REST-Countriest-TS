@@ -1,0 +1,30 @@
+$ff-primary: 'Nunito Sans', sans-serif;
+$fs-map: (
+	'primary': 62.5%,
+	'second': 60%,
+);
+
+$neutral-colors: (
+	'clr--shadow-first': rgba(0, 0, 0, 0.059),
+	'clr--shadow-second': rgba(0, 0, 0, 0.12),
+);
+
+$colors: (
+	'clr--dark-blue': #2b3945,
+	'clr--very-dark-blue': #202c37,
+	'clr--very-dark-blue-text': #111517,
+	'clr--dark-gray': #858585,
+	'clr--very-light-gray': hsl(0, 0%, 98%),
+	'clr--white': #ffffff,
+);
+
+$mq-breakpoints: (
+	'mobile': 42.25rem,
+);
+
+// - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+// - Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+// - Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+// - Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+// - Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+// - White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)

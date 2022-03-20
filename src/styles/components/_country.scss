@@ -1,0 +1,30 @@
+.country {
+	height: auto;
+	margin: 2rem;
+	background-color: map-get($colors, 'clr--white');
+	box-shadow: 0 1px 6px map-get($neutral-colors, 'clr--shadow-first'),
+		0 1px 8px map-get($neutral-colors, 'clr--shadow-second');
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		transform: translateY(-1rem);
+	}
+	&__flag {
+		height: 20rem;
+	}
+	&__name {
+		font-size: 1.5rem;
+		margin: 1rem 0;
+	}
+	&__description {
+		margin: 2rem;
+	}
+	&__data {
+		font-weight: 600;
+		font-size: 1.3rem;
+	}
+	&--stats {
+		font-weight: 400;
+	}
+}
