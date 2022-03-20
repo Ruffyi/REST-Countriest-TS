@@ -1,5 +1,11 @@
+import Routing from './pages/Routing';
+
 const App = () => {
-	return <h1>Hello React + Ts!</h1>;
+	return (
+		<main>
+			<Routing />
+		</main>
+	);
 };
 
 export default App;
