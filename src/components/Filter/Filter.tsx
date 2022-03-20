@@ -3,6 +3,7 @@ import { default as FilterStyles } from './Filter.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import FilterRegion from '../FilterRegion/FilterRegion';
 
 const styled = bemCssModules(FilterStyles);
 
@@ -21,6 +22,7 @@ const Filter = () => {
 					data-search
 				/>
 			</div>
+			<FilterRegion />
 		</section>
 	);
 };
