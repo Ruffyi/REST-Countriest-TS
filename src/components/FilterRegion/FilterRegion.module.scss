@@ -29,6 +29,9 @@
 		width: 100%;
 		list-style: none;
 		transform: scale(0);
+		&--show {
+			transform: scale(1);
+		}
 	}
 	&__option {
 		@include flex-mother(row, center, flex-start);
