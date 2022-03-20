@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router';
+import Countries from './Countries';
 
 const Routing = () => {
 	return (
 		<Routes>
-			<Route path='/' element={<h1>Hello!@</h1>} />
+			<Route path='/' element={<Countries />} />
 		</Routes>
 	);
 };

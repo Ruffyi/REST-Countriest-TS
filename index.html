@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webpack 5 starter</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body data-theme="light">
+		<main class="main">
+			<header class="header">
+				<h1 class="header__title">Where in the world?</h1>
+				<button class="btn header__btn" data-switch>
+					<ion-icon name="moon-outline"></ion-icon> Dark Mode
+				</button>
+			</header>
+			<section class="countries">
+				<section class="filter">
+					<div class="filter__input">
+						<div class="filter__icon">
+							<ion-icon name="search-outline"></ion-icon>
+						</div>
+						<input
+							type="text"
+							class="input"
+							title="Search any countries"
+							placeholder="Search for a country"
+							data-search
+						/>
+					</div>
+					<div class="region">
+						<div class="region__heading">
+							<p class="region__title">Filter by Region</p>
+							<button class="btn region__icon" data-region>
+								<ion-icon name="chevron-down-outline"></ion-icon>
+							</button>
+						</div>
+						<ul class="region__options" data-options>
+							<li class="region__option" data-option="africa">Africa</li>
+							<li class="region__option" data-option="america">America</li>
+							<li class="region__option" data-option="asia">Asia</li>
+							<li class="region__option" data-option="europe">Europe</li>
+							<li class="region__option" data-option="oceania">Oceania</li>
+						</ul>
+					</div>
+				</section>
+				<section class="countries__list" data-countries></section>
+			</section>
+		</main>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
