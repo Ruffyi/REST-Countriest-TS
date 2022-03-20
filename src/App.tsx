@@ -1,10 +1,11 @@
 import Routing from './pages/Routing';
+import Root from './components/Root/Root';
 
 const App = () => {
 	return (
-		<main>
+		<Root>
 			<Routing />
-		</main>
+		</Root>
 	);
 };
 
