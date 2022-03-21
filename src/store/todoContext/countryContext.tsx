@@ -2,13 +2,13 @@ import { createContext } from 'react';
 import ICountry from '../../@types/shared/Country.type';
 
 interface ICountryContext {
-	countries: ICountry[];
-	setCountries: (countries: ICountry[]) => void;
+	countries: ICountry[] | null;
+	setCountries?: (data: ICountry[]) => void;
 }
 
-const countryContext = createContext<ICountryContext>({
+const countryContext = createContext<ICountryContext | null>({
 	countries: [],
-	setCountries: (countries: ICountry[]) => {},
+	setCountries: () => {},
 });
 
 export default countryContext;
