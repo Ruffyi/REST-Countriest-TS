@@ -1,7 +1,7 @@
 import { default as bemCssModules } from 'bem-css-modules';
 import { default as RootStyles } from './Root.module.scss';
 
-import { IRoot } from './Root.types';
+import { IRoot } from '../../@types/shared/Root.types';
 
 const styled = bemCssModules(RootStyles);
 

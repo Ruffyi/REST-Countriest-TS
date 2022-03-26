@@ -1,0 +1,33 @@
+@import './../../styles/abstracts/mixins';
+@import './../../styles/abstracts/variables';
+
+@import './../../styles/utils/placeholders';
+
+.paginaton {
+	@include flex-mother(row, center, space-around);
+	width: 80%;
+	margin: 0 auto;
+	padding: 4rem 0;
+	&__item {
+		@extend %btn;
+		width: 4rem;
+		height: 4rem;
+		background-color: map-get($colors, 'clr--white');
+		box-shadow: 0 1px 6px map-get($neutral-colors, 'clr--shadow-first'),
+			0 1px 8px map-get($neutral-colors, 'clr--shadow-second');
+		border-radius: 50%;
+		transition: 0.3s;
+		&:hover {
+			background-color: map-get($colors, 'clr--very-dark-blue');
+			color: map-get($colors, 'clr--white');
+		}
+		&--active {
+			background-color: map-get($colors, 'clr--very-dark-blue');
+			color: map-get($colors, 'clr--white');
+			&:hover {
+				color: map-get($colors, 'clr--very-dark-blue');
+				background-color: map-get($colors, 'clr--white');
+			}
+		}
+	}
+}

@@ -6,26 +6,18 @@ import paginationContext from './store/paginationContext/paginationContext';
 import ICountry from './@types/shared/Country.type';
 import useFetch from './hooks/useFetch';
 import usePagination from './hooks/usePaginate';
+import PaginationProvider from './store/paginationContext/paginationContext';
 
 const App = () => {
 	const { data } = useFetch<ICountry>('https://restcountries.com/v2/all');
-	const { paginationConfig, setCurrentPage, pageCount } = usePagination(
-		data.length
-	);
+
 	return (
 		<countryContext.Provider value={{ countries: data }}>
-			<paginationContext.Provider
-				value={{
-					countries: data,
-					pageCount,
-					setCurrentPage,
-					config: paginationConfig,
-				}}
-			>
+			<PaginationProvider countries={data}>
 				<Root>
 					<Routing />
 				</Root>
-			</paginationContext.Provider>
+			</PaginationProvider>
 		</countryContext.Provider>
 	);
 };

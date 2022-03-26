@@ -10,8 +10,23 @@ const usePagination = (initial: number) => {
 		start: firstPage,
 		end: lastPage,
 	};
-	console.log(currentPage, paginationConfig);
-	return { paginationConfig, setCurrentPage, pageCount } as const;
+
+	const setNextPage = () => {
+		currentPage < pageCount && setCurrentPage(page => page + 1);
+	};
+
+	const setPreviousPage = () => {
+		currentPage !== 1 && setCurrentPage(page => page - 1);
+	};
+
+	return {
+		paginationConfig,
+		setCurrentPage,
+		pageCount,
+		setNextPage,
+		setPreviousPage,
+		currentPage,
+	} as const;
 };
 
 export default usePagination;

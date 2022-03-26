@@ -1,9 +1,8 @@
 import { default as bemCssModules } from 'bem-css-modules';
 import { useContext } from 'react';
-import paginationContext from '../../../store/paginationContext/paginationContext';
+import { paginationContext } from '../../../store/paginationContext/paginationContext';
 import countryContext from '../../../store/todoContext/countryContext';
 import Country from '../../Country/Country';
-import Pagination from '../../Pagination/Pagination';
 import { default as CountriesListStyles } from './../Countries.module.scss';
 
 const styled = bemCssModules(CountriesListStyles);
